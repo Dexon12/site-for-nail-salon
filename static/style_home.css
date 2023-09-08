@@ -1,0 +1,453 @@
+.background-image {
+    /* Установите путь к вашей картинке в качестве фонового изображения */
+    background-image: url("/static/assets/images/beauty_saloon.jpeg");
+    /* Настраиваем размеры и позицию фонового изображения */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Указываем высоту для фонового изображения, чтобы занимало всю высоту экрана */
+    height: 100vh;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.text-white {
+    /* Добавляем стили для текста поверх картинки */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* Отключаем тень для текста */
+    text-shadow: none;
+}
+.p_home_page{
+    width: 600px;
+    position: relative;
+    font-size: 20px;
+}
+.h1_home_page{
+    position: relative;
+    font-size: 64px;
+}
+.div_img{
+    bottom: 50px;
+}
+.uk-button {
+    margin: 0;
+    border: none;
+    overflow: visible;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    border-radius: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 30px;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 38px;
+    text-align: center;
+    text-decoration: none;
+    transition: .1s ease-in-out;
+    transition-property: color, background-color,background-position,background-size,border-color,box-shadow;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    border-radius: 500px;
+    background-origin: border-box;
+}
+.uk-button-primary {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.ps-btn-float {
+    visibility: hidden;
+}
+.uk-button:not(:disabled) {
+    cursor: pointer;
+}
+.button_hover:hover{
+    background-color: #2b2b2b;
+}
+.a_homePage{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.text_about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_about_us{
+    text-align: center;
+    width: 750px;
+    padding: 70px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    padding-left: 50px;
+    margin-right: 0px;
+
+}
+.middle_text_after_img{
+    background-color: rgb(220, 209, 220);
+}
+.a_img{
+    width: 700px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.img_middle{
+    width: 660px;
+    height: 385px;
+}
+.picture {
+    position: relative;
+    width: 660px;
+    height: 385px;
+    background-image: url("/static/assets/images/blond_hair.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    transition: opacity 0.5s ease;
+}
+  
+.picture h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center; /* Непрозрачный фон для заголовка */
+    padding: 20px; /* Опционально, добавляет отступы вокруг текста */
+    color: #fff;
+    font-size: 36px;
+  }
+.picture h3:hover{
+    color: #dfdbdb;
+}
+  
+.picture:hover{
+    opacity: 1;
+}
+hr{
+	border: 3px solid #2b2b2b;
+	border-radius: 5px;
+	margin: 20px 0px ;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.picture_2{
+    position: relative;
+    width: 658px;
+    height: 385px;
+    background-image: url("/static/assets/images/nails.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    border-radius: 100px;
+    transition: opacity 0.5s ease;
+}
+.picture_3{ 
+    position: relative;
+    width: 1158px;
+    height: 385px;
+    background-image: url("/static/assets/images/mask.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    left: 130px;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+    transform: translateZ(0);
+}
+.picture_4{
+    position: relative;
+    width: 458px;
+    height: 385px;
+    background-image: url("/static/assets/images/massage.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    border-radius: 100px;
+    left: 150px;
+    transition: opacity 0.5s ease;
+}
+.picture_5{
+    position: relative;
+    width: 458px;
+    height: 385px;
+    background-image: url("/static/assets/images/photo.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    border-radius: 100px;
+    left: 150px;
+    transition: opacity 0.5s ease;
+}
+.picture_2 h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center; /* Непрозрачный фон для заголовка */
+    padding: 20px; /* Опционально, добавляет отступы вокруг текста */
+    color: #fff;
+    font-size: 36px;
+  }
+.picture_2 h3:hover{
+    color: #dfdbdb;
+}
+  
+.picture_2:hover{
+    opacity: 1;
+}
+.picture_3 h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center; /* Непрозрачный фон для заголовка */
+    padding: 20px; /* Опционально, добавляет отступы вокруг текста */
+    color: #fff;
+    font-size: 36px;
+  }
+.picture_3 h3:hover{
+    color: #dfdbdb;
+}
+  
+.picture_3:hover{
+    opacity: 1;
+}
+.picture_3:hover:before {
+    opacity: 1;
+}
+.picture_3:before {
+    /* Позиционируем псевдоэлемент поверх основного содержимого */
+    content: "";
+    border-radius: 187px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Цвет фона с небольшой прозрачностью */
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Добавим плавную анимацию */
+}
+.picture_3::after {
+    /* Позиционируем второй псевдоэлемент поверх основного содержимого */
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/static/assets/images/mask_color.png"); /* Путь к изображению для анимации */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+    opacity: 0;
+    border-radius: 100px;
+    transition: opacity 0.5s ease; /* Добавим плавную анимацию */
+}
+.picture_3:hover::after {
+    opacity: 1;
+}
+.picture_4 h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center; /* Непрозрачный фон для заголовка */
+    padding: 30px; /* Опционально, добавляет отступы вокруг текста */
+    color: #fff;
+    font-size: 36px;
+  }
+.picture_4 h3:hover{
+    color: #dfdbdb;
+}
+  
+.picture_4:hover{
+    opacity: 1;
+}
+.picture_5 h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center; /* Непрозрачный фон для заголовка */
+    padding: 30px; /* Опционально, добавляет отступы вокруг текста */
+    color: #fff;
+    font-size: 36px;
+  }
+.picture_5 h3:hover{
+    color: #dfdbdb;
+}
+  
+.picture_5:hover{
+    opacity: 1;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет переносить элементы на новую строку, если не хватает места */
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.image{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.popust{
+    background-image: url('/static/assets/images/alexander-krivitskiy_500.jpg');
+    height: 500px;
+    width: 1400px;
+    border-radius: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 40px;
+    text-align: center;
+}
+.about_popust{
+    background-color: #fff;
+    display: flex;
+    justify-content: center; /* Выравнивание по горизонтали по центру */
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+}
+.popust h1{
+    color: #fff;
+    position: relative;
+    top: 20%; /* Перемещаем заголовок на 50% от верхней границы .popust */
+    left: 50%; /* Перемещаем заголовок на 50% от левой границы .popust */
+    transform: translate(-50%, -50%);
+    width: 760px;
+    font-size: 52px;
+}
+.popust p{
+    font-size: 22px;
+    position: relative;
+    top: 15%; /* Перемещаем заголовок на 50% от верхней границы .popust */
+    left: 50%; /* Перемещаем заголовок на 50% от левой границы .popust */
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.t-btn_md {
+    height: 60px;
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.t-btn {
+    display: inline-block;
+    border: 0 none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-weight: 700;
+    background-image: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.t995__btn {
+    display: inline-flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 6px 0;
+}
+.t995__btn-wrapper:first-child {
+    margin-left: 0;
+}
+.t995__btn-wrapper {
+    display: inline-block;
+    margin: 0 6px;
+    position: relative;
+}
+.t995__btn-wrapper a{
+    text-decoration: none;
+    margin-top: 60px;
+    font-size: 16px;
+    color:#ffffff;
+    border:1px solid #ffffff;
+    border-radius:20px; 
+    -moz-border-radius:20px; 
+    -webkit-border-radius:20px;
+}
+.t995__btn-wrapper a:hover{
+    color:#000;
+    background-color: #fff;
+    border:1px solid #000;
+}
+.tn_atom {
+    display: flex;
+    position: relative;
+    vertical-align: middle;
+    width: 200px;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100px;
+    right: 150px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tn_h1{
+    color: #a6a6a6;
+    line-height: 78px;
+    font-size: 52px;
+    position: relative;
+}
+.my_corousel{
+    padding: 0; 
+}
+.my_corousel .corousel-item{
+    display: flex;
+    max-height: 500px;
+}
+.my_corousel .corousel-item img{
+    object-fit: cover;
+}

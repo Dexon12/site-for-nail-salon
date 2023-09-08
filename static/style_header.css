@@ -1,0 +1,44 @@
+img{
+    max-width: 150%;
+    height: auto;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: #111;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.nav-link{
+    margin-right: 30px;
+}
+.img_i{
+    margin: 0px;
+}
+.top-menu li a::after{
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #111;
+    height: 1px;
+    transition: all .3s;
+    transform: scale(0);
+}
+.top-menu li a:hover::after{
+    border: 1px solid #111;
+    transform: scale(1);
+}
+.top-menu .img_i::after {
+    content: none;
+}
+.top-menu li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+.nav-link.active.img_i i {
+    font-size: 18px;
+    transition: font-size 0.3s; /* Добавляем плавный переход для анимации */
+}
+
+/* Увеличение размера иконок до 20px при наведении */
+.nav-link.active.img_i:hover i {
+    font-size: 20px;
+}
+

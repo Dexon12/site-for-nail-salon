@@ -1,0 +1,60 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'style_header.css' %}">
+<nav class="navbar navbar-expand-lg " style="background-color: rgb(220, 209, 220);">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'home_view' %}" style="margin-left: 30px; font-size: 28px;">Beauty_lorem</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 top-menu" style="font-size: 16px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'aboutUs_view' %}">О нас</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active" aria-current="page" data-bs-toggle="dropdown" href="#">Услуги</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'makeup_view' %}">Визаж</a></li>
+            <li><a class="dropdown-item" href="{% url 'haircuting_view' %}">Парикмахерский зал</a></li>
+            <li><a class="dropdown-item" href="{% url 'cosmetology_view' %}">Косметалогия</a></li>
+            <li><a class="dropdown-item" href="{% url 'nails_view' %}">Ногтевой сервис</a></li>
+            <li><a class="dropdown-item" href="{% url 'massage_view' %}">Массаж</a></li>
+            <li><hr class="dropdown-divider" style="width: 186px; border: 0.5px solid black;"></li>
+            <li><a class="dropdown-item" href="{% url 'services_view' %}">Все услуги</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="{% url 'contacts_view' %}">Контакты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'sales_view' %}">Акции</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'our_projects_view' %}">Наши работы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'vacancies_view' %}">Вакансии</a>
+        </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link active img_i" aria-current="page" href="#"><i class="fa-brands fa-telegram"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active img_i" aria-current="page" href="#"><i class="fa-brands fa-viber"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active img_i" aria-current="page" href="#"><i class="fa-brands fa-vk"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active img_i" aria-current="page" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active img_i" aria-current="page" href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li> -->
+
+            <li class="nav-item">
+              <a href="#" aria-current="page" class="nav-link active" style="margin-left: 50px;">Войти</a>
+            </li>
+      </ul>
+    </div>
+  </div>
+</nav>

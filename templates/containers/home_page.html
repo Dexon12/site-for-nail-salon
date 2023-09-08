@@ -1,0 +1,256 @@
+<!--My home page-->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Home page
+{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="/static/style_homePage.css">
+<div class="container-fluid">
+	<div class="container-fluid p-0 position-relative">
+		<div class="background-image">
+			<div class="text-white text-center div_img">
+				<h1 class="h1_home_page">САЛОН КРАСОТЫ</h1>
+				<p class="p_home_page">премиум-класса в самом центре Москвы, в Малом Черкасском переулке, в двух шагах от станции метро Лубянка</p>
+				<p>
+					<button class="ps-btn-float uk-button uk-button-primary button_hover" style="visibility: visible;">Запись online </button>
+					<a class="uk-button uk-button-primary button_hover" href="{% url 'order_parking_view' %}" uk-scroll="">Заказ парковки</a>
+					<a class="uk-button uk-button-primary button_hover" href="{% url 'services_view' %}" uk-scroll="">Список услуг</a>
+				</p>		
+				<p>
+					<a href="#" target="_blank" rel="noopener" class="a_homePage" style="text-decoration: none;">
+						<img src="{% static 'assets\images\free-icon-viber-2111705.png' %}" width="30" height="30" alt="Свяжитесь с нами в Viber">
+					</a>
+					<a href="#" target="_blank" rel="noopener" class="a_homePage" style="text-decoration: none;">
+						<img src="{% static 'assets\images\free-icon-whatsapp-2504957.png' %}" width="30" height="30" alt="Свяжитесь с нами в WhattsApp">
+					</a>
+					<a href="#" target="_blank" rel="noopener" class="a_homePage" style="text-decoration: none;">
+						<img src="{% static 'assets\images\free-icon-instagram-3955024.png' %}" width="30" height="30" alt="Свяжитесь с нами в Instagram">
+					</a>
+					<a href="#" target="_blank" rel="noopener" class="a_homePage" style="text-decoration: none;">
+						<img src="{% static 'assets\images\free-icon-vk-2504953.png' %}" width="30" height="30" alt="Свяжитесь с нами в Vk">
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="middle_text_after_img">
+		<div class="text-center text_about">
+			<div class="tn_atom">
+				<h1 class="tn_h1" style="margin-bottom: 150px;">О НАС</h1>
+			</div>
+			<p class="text_about_us">Рады видеть вас на официальном сайте многопрофильного салона красоты CELEBRITY. Опытные мастера оказывают комплексные услуги по уходу за волосами и кожей. Современное оборудование и профессионализм персонала позволяют удовлетворить требования самых взыскательных клиентов. Наш салон красоты класса люкс расположен в Москве, рядом с метро Лубянка. Здесь вы можете ознакомиться с некоторыми услугами</p>
+			<div class="tn_atom">
+				<h1 class="tn_h1" style="left: 100px; top: 300px;">УСЛУГИ</h1>
+			</div>
+		</div>
+		<hr>
+	<div class="images">
+		<div class="image" style="width: 700px; margin: 0px; flex: 1;">
+			<a href="{% url 'haircuting_view' %}" class="a_img">
+				<div class="picture">
+					<h3>Профессиональная стрижка</h3>
+				</div>
+			</a>
+		</div>
+		<div class="image">
+			<a href="{% url 'makeup_view' %}" class="a_img">
+				<div class="picture_5">
+					<h3>Визаж</h3>
+				</div>
+			</a>
+		</div>
+		<div class="image">
+			<a href="{% url 'nails_view' %}" class="a_img">
+				<div class="picture_2">
+					<h3>Ногтевой сервис</h3>
+				</div>
+			</a>
+		</div>
+		<div class="image">
+			<a href="{% url 'massage_view' %}" class="a_img">
+				<div class="picture_4">
+					<h3>Массаж/Коррекция фигуры</h3>
+				</div>
+			</a>
+		</div>
+		<div class="image">
+			<a href="{% url 'cosmetology_view' %}" class="a_img">
+				<div class="picture_3"> 
+					<h3>Профессиональная косметалогия</h3>
+				</div>
+			</a>
+		</div>		
+	</div>
+	<div class="about_popust">
+		<div class="popust">
+
+			<h1>СКИДКА 10% НА ПЕРВОЕ ПОСЕЩЕНИЕ!</h1>
+			<p>Для более близкого знакомства с нами – первая услуга с 10% скидкой!</p>
+			<div class="t995__btn-wrapper">
+				<a href="{% url 'sales_view' %}" target="" class="t995__btn t-btn t-btn_md ">
+					Смотреть все акции</a>
+			</div>
+		</div>
+	</div>
+	<div class="about_masters">
+		<div class="our_command">
+
+		</div>
+		<div class="our_command_images">
+
+
+		</div>
+	</div>
+	<div class="all_our_works">
+		<div class="tn_atom" style="left: 200px;">
+			<h1 class="tn_h1" style="width: 500px;">НАШИ РАБОТЫ</h1>
+		</div>	
+		<div class="container mt-5 d-flex justify-content-between">
+			<div class="carousel-wrapper">
+			  <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="5" aria-label="Slide 6"></button>
+				</div>
+				<div class="carousel-inner">
+				  <div class="carousel-item active"><a href="#">
+					<img src="static\assets\images\2739868fc64521a4c3c9c29dbb5d3061.jpg" class="d-block w-100" alt="...">
+					</a>
+					<div class="carousel-caption d-none d-md-block">
+					  <a href="#">Метка первого слайда</a>
+					  <a href="#">Некоторый репрезентативный заполнитель для первого слайда.</a>
+					</div>
+				  </div>
+				  <div class="carousel-item"><a href="#">
+					<img src="static\assets\images\photo_2023-07-21_22-12-07.jpg" class="d-block w-100" alt="...">
+					</a>
+					<div class="carousel-caption d-none d-md-block">
+					  <a href="#">Метка второго слайда</a>
+					  <a href="#">Некоторый репрезентативный заполнитель для второго слайда.</a>
+					</div>
+				  </div>
+				  <div class="carousel-item"><a href="#">
+					<img src="static\assets\images\photo_2023-07-21_22-11-54.jpg" class="d-block w-100" alt="..."></a>
+					<div class="carousel-caption d-none d-md-block">
+					  <a href="#">Метка третьего слайда</a>
+					  <a href="#">Некоторый репрезентативный заполнитель для третьего слайда.</a>
+					</div>
+				  </div>
+				  <div class="carousel-item"><a href="#">
+					<img src="static\assets\images\photo_2023-07-21_22-11-56.jpg" class="d-block w-100" alt="..."></a>
+					<div class="carousel-caption d-none d-md-block">
+					  <a href="#">Метка четвёртого слайда</a>
+					  <a href="#">Некоторый репрезентативный заполнитель для четвёртого слайда.</a>
+					</div>
+				  </div>
+				  <div class="carousel-item"><a href="#">
+					<img src="static\assets\images\photo_2023-07-21_22-11-59.jpg" class="d-block w-100" alt="..."></a>
+					<div class="carousel-caption d-none d-md-block">
+					  <a href="#">Метка пятого слайда</a>
+					  <a href="#">Некоторый репрезентативный заполнитель для пятого слайда.</a>
+					</div>
+				  </div>
+				  <div class="carousel-item"><a href="#">
+					<img src="static\assets\images\nails.jpeg" class="d-block w-100" alt="..."></a>
+					<div class="carousel-caption d-none d-md-block">
+					  <a href="#">Метка шестого слайда</a>
+					  <a href="#">Некоторый репрезентативный заполнитель для шестого слайда.</a>
+					</div>
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Предыдущий</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Следующий</span>
+				</button>
+			  </div>
+			</div>
+		  
+			<div class="carousel-wrapper">
+			  <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="6" aria-label="Slide 7"></button>
+				</div>
+				<div class="carousel-inner">
+				  <div class="carousel-item active"><a href="#">
+					<img src="static\assets\images\haircut.jpeg" class="d-block w-100" alt="..."></a>
+					<div class="carousel-caption d-none d-md-block">
+					  <a href="#">Метка первого слайда</a>
+					  <a href="#">Некоторый репрезентативный заполнитель для первого слайда.</a>
+					</div>
+				  </div>
+				  <div class="carousel-item"><a href="#">
+					<img src="static\assets\images\haircut2.jpeg" class="d-block w-100" alt="..."></a>
+					<div class="carousel-caption d-none d-md-block">
+					  <a href="#">Метка второго слайда</a>
+					  <a href="#">Некоторый репрезентативный заполнитель для второго слайда.</a>
+					</div>
+				  </div>
+				  <div class="carousel-item"><a href="#">
+					<img src="static\assets\images\haircut3.jpeg" class="d-block w-100" alt="..."></a>
+					<div class="carousel-caption d-none d-md-block">
+					  <a href="#">Метка третьего слайда</a>
+					  <a href="#">Некоторый репрезентативный заполнитель для третьего слайда.</a>
+					</div>
+				  </div>
+				  <div class="carousel-item"><a href="#">
+					<img src="static\assets\images\haircut4.jpeg" class="d-block w-100" alt="..."></a>
+					<div class="carousel-caption d-none d-md-block">
+					  <a href="#">Метка третьего слайда</a>
+					  <a href="#">Некоторый репрезентативный заполнитель для третьего слайда.</a>
+					</div>
+				  </div>
+				  <div class="carousel-item"><a href="#">
+					<img src="static\assets\images\haircut5.jpeg" class="d-block w-100" alt="..."></a>
+					<div class="carousel-caption d-none d-md-block">
+					  <a href="#">Метка третьего слайда</a>
+					  <a href="#">Некоторый репрезентативный заполнитель для третьего слайда.</a>
+					</div>
+				  </div>
+				  <div class="carousel-item"><a href="#">
+					<img src="static\assets\images\haircut7.jpg" class="d-block w-100" alt="..."></a>
+					<div class="carousel-caption d-none d-md-block">
+					  <a href="#">Метка третьего слайда</a>
+					  <a href="#">Некоторый репрезентативный заполнитель для третьего слайда.</a>
+					</div>
+				  </div>
+				  <div class="carousel-item"><a href="#">
+					<img src="static\assets\images\haircut8.jpg" class="d-block w-100" alt="..."></a>
+					<div class="carousel-caption d-none d-md-block">
+					  <a href="#">Метка третьего слайда</a>
+					  <a href="#">Некоторый репрезентативный заполнитель для третьего слайда.</a>
+					</div>
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Предыдущий</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Следующий</span>
+				</button>
+			  </div>
+			</div>
+		  </div>
+	</div>
+	</div>
+</div>
+{% endblock%}
+

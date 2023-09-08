@@ -1,0 +1,113 @@
+.icon{
+    width: 50px;
+    height: 50px;
+    margin-top: 150px;
+    margin-right: 10px;
+}
+.low_footer{
+    width: 300px;
+    position: relative;
+    left: 20px;
+
+}
+/* Добавляем отступ сверху для карты */
+.map-container {
+    position: relative;
+    margin-top: 50px;
+    left: 150px;
+}
+
+/* Стили для карты, чтобы она была справа */
+.map-right {
+    float: right;
+    margin-top: 20px; /* Добавляем отступ слева */
+}
+
+/* Стили для подписи к карте */
+.map-caption {
+    position: absolute;
+    top: 70px; /* Расположение сверху (при необходимости измените значение) */
+    right: 0;
+    font-size: 18px;
+    color: #555;
+}
+.footer_image_qr{
+    width: 150px;
+    height: 150px;
+}
+.footer_image_et{
+    width: 150px;
+    height: 79px;
+}
+.footer_image_rejting{
+    width: 150px;
+    height: 86px;
+}
+.images_footer{
+    display: flex;
+    flex-direction: column;
+
+}
+.all {
+    margin-bottom: 20px;
+    max-width: 150px;
+}
+.text_right_map{
+    max-width: 300px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.near_map{
+    display: flex;
+}
+.middle_text_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 150px;
+
+}
+.text_p_footer{
+    margin: 0px;
+}
+.text_div_footer{
+    text-align: left; 
+    right: 100px;
+    width: 300px;
+}
+.h5{
+    width: 300px;
+}
+
+.btn_WhattsApp{
+	background-color: #000; 
+    border-color: #000;
+    color: #fff;
+    border-radius: 20px; 
+    margin-top: 20px; 
+    margin-right: 20px;
+}
+.btn_WhattsApp:hover{
+    cursor: pointer;
+    background-color: #403f3f;
+    border-color: #403f3f;
+}
+.a_footer{
+    text-decoration: none;
+}
+.div_p_footer{
+    width: 500px;
+}
+.p_footer{
+    width: 800px;
+    right: 100px;
+    position: relative;
+}
+.p_footer_1{
+    margin-top: 20px;
+    position: relative;
+    left: 15px;
+}
